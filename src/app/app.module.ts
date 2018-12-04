@@ -9,7 +9,6 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatGridListModule, MatCardModule, MatMenuModule, MatTableModule, MatPaginatorModule, MatSortModule } from '@angular/material';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { MainLayoutComponent } from './shared/main-layout/main-layout.component';
-import { TableComponent } from './shared/table/table.component';
 
 
 @NgModule({
@@ -17,8 +16,7 @@ import { TableComponent } from './shared/table/table.component';
     AppComponent,
     NavigationComponent,
     DashboardComponent,
-    MainLayoutComponent,
-    TableComponent
+    MainLayoutComponent
   ],
   imports: [
     BrowserModule,

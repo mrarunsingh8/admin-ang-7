@@ -9,7 +9,8 @@ const routes: Routes = [
 	{
 		path: '', component: MainLayoutComponent, children:[
 			{path:'', component: DashboardComponent},
-			{path: 'category', loadChildren: "./category/category.module#CategoryModule"}
+			{path: 'category', loadChildren: "./category/category.module#CategoryModule"},
+			{path: 'user', loadChildren: "./users/users.module#UsersModule"}
 		]
 	},
 

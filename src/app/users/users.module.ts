@@ -1,24 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Routes, RouterModule } from '@angular/router';
 
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatGridListModule, MatCardModule, MatMenuModule, MatTableModule, MatPaginatorModule, MatSortModule } from '@angular/material';
 
+import { RouterModule,Routes } from '@angular/router';
+import { UserListComponent } from './user-list/user-list.component';
 
-import { CategoryListComponent } from './category-list/category-list.component';
 
-const categoryRoutes: Routes = [
-	{path: '', component: CategoryListComponent}
+const userRoots: Routes = [
+	{path: "", component: UserListComponent}
 ];
 
 @NgModule({
-  declarations: [
-  	CategoryListComponent,
-
-  ],
+  declarations: [UserListComponent],
   imports: [
     CommonModule,
-    RouterModule.forChild(categoryRoutes),
+    RouterModule.forChild(userRoots),    
     MatToolbarModule,
     MatButtonModule,
     MatSidenavModule,
@@ -32,4 +29,4 @@ const categoryRoutes: Routes = [
     MatSortModule
   ]
 })
-export class CategoryModule { }
+export class UsersModule { }
